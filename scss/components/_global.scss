@@ -1,0 +1,83 @@
+* {
+  transition: ease;
+  transition-duration: 300ms;
+}
+
+body {
+  background-color: $body-color-bg;
+  font-family: $base-serif;
+  color: $body-color-text;
+
+  
+}
+
+h1 {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+h1, h2, h3 {
+  font-family: $base-sans;
+  color: $body-color-text;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid $border-color;
+  background-color: $border-color-bg;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 16px 8px;
+  color: $card-text-color;
+
+  h2, h3 {
+    text-transform: uppercase;
+    color: $card-text-color;
+    justify-content: left;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  color: $link-color;
+  font-size: 1.2rem;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  input, textarea {
+    border: 2px solid $border-color-bg;
+    background-color: $border-color-bg;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+
+    .invalid {
+      border: 2px solid $danger;
+    }
+  }
+
+  button {
+    margin-top: 1.2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 0;
+    border-radius: 4px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: white;
+      color: $dark;
+    }
+  }
+}

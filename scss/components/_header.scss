@@ -27,6 +27,10 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: 500;
+
+        transition: ease;
+        transition-duration: 300ms;
+        
         &:hover, &:active, &.active {
           background-color: $header-active-menu-bg;
           color: $header-active-menu-color;

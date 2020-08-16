@@ -1,2 +1,0 @@
-# spacex
- Noroff handin repo

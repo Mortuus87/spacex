@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="description" content="The contact form to send a message to the administrator of the site">
   <?php include("includes/components/head.php"); ?>
   <title>SpaceX Microsite</title>
 </head>
@@ -11,7 +12,7 @@
   <main id="contact">
     <section class="container narrow">
       <h1>Contact</h1>
-      <p>feel free to leave a message below</p>
+      <p>We would like to hear from you if you have any feedback about this site. Feel free to leave a message below.</p>
       
       <form action="POST" class="form">
         <label for="name">Name</label>

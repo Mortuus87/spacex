@@ -11,9 +11,9 @@ $success: #2fa02f;
 $base-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $base-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-$color-background-header: $dark;
+$color-background-header: black;
 $color-background-main: white;
-$color-font-primary: $dark;
+$color-font-primary: black;
 
 // Header
 $header-background: $color-background-header;
@@ -24,7 +24,7 @@ $header-active-menu-color: $dark;
 $header-font: $base-sans;
 
 // Body
-$body-color-bg: black;
+$body-color-bg: $dark;
 $body-color-text: white;
 
 

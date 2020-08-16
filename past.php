@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="description" content="Past SpaceX launches">
   <?php include("includes/components/head.php"); ?>
   <title>SpaceX Microsite</title>
 </head>

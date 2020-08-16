@@ -38,6 +38,10 @@ h1, h2, h3 {
     color: $card-text-color;
     justify-content: left;
   }
+
+  a {
+    color: $dark;
+  }
 }
 
 p {

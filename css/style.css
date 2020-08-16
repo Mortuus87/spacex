@@ -115,6 +115,9 @@ h1, h2, h3 {
   color: #333;
   justify-content: left;
 }
+.card a {
+  color: #333;
+}
 
 p {
   font-size: 1.2rem;

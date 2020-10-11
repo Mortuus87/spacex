@@ -1,11 +1,13 @@
 // Colors
-$dark: #333;   
-$light: #f5f5f5;
-$half: #999;
+$dark:    #333333;   
+$light:   #f5f5f5;
+$half:    #999999;
 
-$danger: #ff2626;
+$danger:  #ff2626;
 $warning: #ffff44;
 $success: #2fa02f;
+
+$primary: #9e9eff;
 
 //Fonts
 $base-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +15,7 @@ $base-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 $color-background-header: black;
 $color-background-main: white;
-$color-font-primary: black;
+$color-font-primary: $dark;
 
 // Header
 $header-background: $color-background-header;
@@ -23,8 +25,11 @@ $header-active-menu-bg: $light;
 $header-active-menu-color: $dark;
 $header-font: $base-sans;
 
+// Main
+$main-color-bg: $dark;
+
 // Body
-$body-color-bg: $dark;
+$body-color-bg: black;
 $body-color-text: white;
 
 
@@ -34,6 +39,7 @@ $border-color: $half;
 
 // Card
 $card-text-color: $dark;
+$card-box-shadow: 0px 0px 40px -20px white;
 
 // Links
 $link-color: white;

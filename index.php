@@ -11,8 +11,15 @@
   <?php include("includes/components/header.php"); ?>
   <main id="next">
     <div class="container">
-      <h1>Upcoming Launches</h1>
+      <div class="row">
+        <div class="col-12">
+          <h1>Upcoming Launches</h1>
+        </div>
+      </div>
       <section class="cards" id="output">
+        <div class="spinner-wrapper">
+          <img class="spinner" src="res/spinner.svg">
+        </div>
         <!-- generated content -->
       </section>
     </div>

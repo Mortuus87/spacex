@@ -1,7 +1,11 @@
 body {
   background-color: $body-color-bg;
-  font-family: $base-serif;
+  font-family: $base-sans;
   color: $body-color-text;
+}
+
+main {
+  background-color: $main-color-bg;
 }
 
 h1 {
@@ -21,10 +25,9 @@ h1, h2, h3 {
 .card {
   border: 1px solid $border-color;
   background-color: $border-color-bg;
-  border-radius: 8px;
-  padding: 8px 16px;
-  margin: 16px 8px;
+  border-radius: 10px;
   color: $card-text-color;
+  box-shadow: $card-box-shadow;
 
   h2, h3 {
     text-transform: uppercase;
@@ -40,27 +43,51 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 a {
   color: $link-color;
-  font-size: 1.2rem;
+  font-size: 1rem;
   &:hover {
     color: $link-color-hover;
+  }
+}
+
+.spinner-wrapper {
+  width: 100%;
+  text-align: center;
+
+  .spinner {
+    height: 150px;
+    
+    @keyframes spinner {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      } 
+    }
+    animation: spinner 3.5s linear infinite;
   }
 }
 
 .form {
   display: flex;
   flex-direction: column;
+
   input, textarea {
     border: 2px solid $border-color-bg;
     background-color: $border-color-bg;
     margin-bottom: 1rem;
     border-radius: 4px;
+    padding: 6px;
+    font-family: $base-sans;
+    font-size: 1rem;
 
-    .invalid {
+    &[data-validity="false"] {
       border: 2px solid $danger;
     }
   }

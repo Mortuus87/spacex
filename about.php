@@ -12,7 +12,7 @@
   <main id="about">
     <section class="container medium">
       <h1>About</h1>
-      <h2>About this page</h2>
+      <h2>This page</h2>
       <p>
         This page uses the unofficial SpaceX API to present information about the next planned rocket launches SpaceX has 
         planned. It also lists previous launches in a descending order.
@@ -29,7 +29,7 @@
       <p>
         SpaceX's achievements include the first privately funded liquid-propellant rocket to reach orbit (Falcon 1 in
         2008),[12] the first private company to successfully launch, orbit, and recover a spacecraft (Dragon in 2010),
-        the first private company to send a spacecraft to the International Space Station (Dragon in 2012),[13] the
+        the first private company to send a spacecraft to the International Space Station (Dragon in 2012), the
         first propulsive landing for an orbital rocket (Falcon 9 in 2015), the first reuse of an orbital rocket (Falcon
         9 in 2017), the first private company to launch an object into orbit around the Sun (Falcon Heavy's payload of a
         Tesla Roadster in 2018), and the first private company to send astronauts to the International Space Station

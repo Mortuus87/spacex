@@ -25,11 +25,12 @@ const requestOptions = {
 };
 
 /**
+ * Initializes the "next launch" page related scripts.
  * 
  * @param {string} target 
  */
 function nextInit(target = 'output') {
-  console.log('on the "index" page');
+  // console.log('on the "index" page');
   const obj = getNextLaunch();
   obj.then(
     r => printSingleLaunchAsHtml(target, r),
@@ -38,21 +39,24 @@ function nextInit(target = 'output') {
 }
 
 /**
+ * Initializes the "past launches" page related scripts.
  * 
- * @param {string} target Where to print the mission list
+ * @param {string} target Where to print the mission list.
  */
 function pastInit(target = 'output') {
-  console.log('on the "past" page');
+  // console.log('on the "past" page');
   const obj = getPastLaunch();
   obj.then(
     r => {
-      // console.log(r);
       printArrayAsHtml(target, r);
     },
     e => console.log('error', e)
   )
 }
 
+/**
+ * Initializes the "contact" page related scripts.
+ */
 function contactInit() {
   element = document.querySelector("#email");
   element.addEventListener('change', (e) => {
@@ -81,7 +85,7 @@ async function getPastLaunch() {
  * @param {string} id
  * @return {Promise}
  */
-async function getTopicId(topic, id) {
+async function getTopicById(topic, id) {
   return getSpaceXApiResponse(topic + '/' + id);
 }
 

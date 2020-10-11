@@ -5,11 +5,11 @@
 function convertTime(timestamp, precision = 'hour') {
   let date = new Date(timestamp * 1000);
   let year = date.getFullYear();
-  let month = date.getMonth() > 10 ? parseInt(date.getMonth() + 1) : '0' + parseInt(date.getMonth() + 1);
+  let month = '0' + parseInt(date.getMonth() + 1);
+  month = month.substring(month.length-2, month.length);
   let day = date.getDate() > 9 ? date.getDate() : '0' + date.getDate();
-  let hour = date.getHours()> 9 ? date.getHours() : '0' + date.getHours();
+  let hour = date.getHours() > 9 ? date.getHours() : '0' + date.getHours();
   let min = date.getMinutes() > 9 ? date.getMinutes() : '0' + date.getMinutes();
-  let sec = date.getSeconds() > 9 ? date.getSeconds() : '0' + date.getSeconds();
 
   let time = '';
   switch (precision) {
@@ -54,21 +54,21 @@ function convertTime(timestamp, precision = 'hour') {
 }
 
 function validateEmail(element) {
-  // console.log("email changed");
-  // console.log(element.value);
-
-  // const $result = $("#result");
   const email = element.value;
-  // $result.text("");
-
-  const emailPattern = /\S+@\S+\.\S+/;
+  const emailPattern = /\S+@\S+\.\S+/; // may be a bit too simple.
 
   if (emailPattern.test(email)) {
+    // Valid 
     console.log("valid");
-    element.setAttribute("style", "border: unset");
+    element.setAttribute('data-validity', 'true')
   } else {
+    // Invalid
     console.log("invalid");
-    element.setAttribute("style", "border: 2px solid red")
+    element.setAttribute('data-validity', 'false')
   }
   return false;
+}
+
+function toggleCardInfoDisplay(button, cardId) {
+  console.log(cardId);
 }

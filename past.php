@@ -13,6 +13,9 @@
     <div class="container">
       <h1>Past Launches</h1>
       <section class="cards" id="output">
+        <div class="spinner-wrapper">
+          <img class="spinner" src="res/spinner.svg">
+        </div>
         <!-- generated content -->
       </section>
     </div>

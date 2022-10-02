@@ -20,7 +20,7 @@ This is a php application, so some platform to host it will probably be needed.
 1. Clone the repo:
 
 ```bash
-git clone <insert link here>
+git clone https://github.com/Mortuus87/spacex.git
 ```
 
 2. Install the dependencies:
